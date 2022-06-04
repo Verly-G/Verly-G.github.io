@@ -43,10 +43,10 @@ document.getElementById("bt2").addEventListener("click", () => {
 //Atividade 3:
 
 const primo = (num31) => {
+    if (num31 % 10 === 0 || num31 % 9 === 0 || num31 % 15 === 0) {
+        return 'O número não é primo'
+    }
     for (let i = 2; num31 >= i; i++) {
-        if (num31 % 2 === 0 && num31 % 3 === 0 && num31 % 5 === 0) {
-            return 'O número não é primo'
-        }
         if (num31 % i === 0) {
             return 'O número não é primo'
         } else {
@@ -77,7 +77,8 @@ document.getElementById("bt4").addEventListener("click", () => {
 //Atividade 5:
 
 const salario = (num5) => {
-    return num5 * 0.11
+    let n = num5 * 0.11
+    return num5 + n
 }
 
 document.getElementById("bt5").addEventListener("click", () => {
@@ -89,7 +90,7 @@ document.getElementById("bt5").addEventListener("click", () => {
 //Atividade 6:
 
 const grau = (num6) => {
-    return num6 * 1.8 + 32
+    return (num6 - 32) / 1.8
 }
 
 document.getElementById("bt6").addEventListener("click", () => {
