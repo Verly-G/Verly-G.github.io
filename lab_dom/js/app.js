@@ -107,7 +107,7 @@ document.getElementById("bt6").addEventListener("click", () => {
 //Atividade 7
 
 const nota = (num71, num72, num73) => {
-    return num71 * 2 + num72 * 3 + num73 * 5 / 10
+    return (num71 * 2 + num72 * 3 + num73 * 5) / 10
 }
 
 document.getElementById("bt7").addEventListener("click", () => {
@@ -116,5 +116,5 @@ document.getElementById("bt7").addEventListener("click", () => {
     const att72 = document.getElementById("72number")
     const att73 = document.getElementById("73number")
     const res7 = document.getElementById("res7")
-    res7.innerHTML = grau(parseFloat(att71.value), parseFloat(att72.value), parseFloat(att73.value))
+    res7.innerHTML = nota(parseFloat(att71.value), parseFloat(att72.value), parseFloat(att73.value))
 })
