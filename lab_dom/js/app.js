@@ -50,13 +50,12 @@ const primo = (num31) => {
     if (num31 <= 1) {
         return 'O número não é primo'
     }
-    for (let i = 2; num31 >= i; i++) {
-        if (num31 % i === 0) {
+    for (let i = 2; i < num31; i++) {
+        if (num31 % i == 0) {
             return 'O número não é primo'
-        } else {
-            return 'O número é primo'
         }
     }
+    return 'O número é primo'
 }
 
 document.getElementById("bt3").addEventListener("click", () => {
@@ -68,7 +67,8 @@ document.getElementById("bt3").addEventListener("click", () => {
 //Atividade 4:
 
 const hipotenusa = (num41, num42) => {
-    return num41 * num41 + num42 * num42
+    let resultado = num41 * num41 + num42 * num42
+    return resultado * resultado
 }
 
 document.getElementById("bt4").addEventListener("click", () => {
