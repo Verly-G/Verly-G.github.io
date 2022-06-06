@@ -43,7 +43,11 @@ document.getElementById("bt2").addEventListener("click", () => {
 //Atividade 3:
 
 const primo = (num31) => {
-    if (num31 % 10 === 0 || num31 % 9 === 0 || num31 % 15 === 0) {
+
+    if (num31 === 2) {
+        return 'O número é primo'
+    }
+    if (num31 <= 1) {
         return 'O número não é primo'
     }
     for (let i = 2; num31 >= i; i++) {
