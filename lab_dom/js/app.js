@@ -24,6 +24,9 @@ document.getElementById("bt1").addEventListener("click", () => {
 //Atividade 2:
 
 const maiormenor = (num21, num22) => {
+    if (num21 == num22) {
+        return 'Os dois são iguais'
+    }
     if (num21 > num22) {
         return 'O número um é o maior.';
     } else {
