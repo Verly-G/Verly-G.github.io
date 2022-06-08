@@ -44,9 +44,6 @@ document.getElementById("bt2").addEventListener("click", () => {
 
 const primo = (num31) => {
 
-    if (num31 === 2) {
-        return 'O número é primo'
-    }
     if (num31 <= 1) {
         return 'O número não é primo'
     }

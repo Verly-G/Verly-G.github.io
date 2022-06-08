@@ -32,7 +32,7 @@ document.getElementById("bt1").addEventListener("click", () => {
 
 const potencia = (number2) => {
     let resultado
-    for (let i = 1; i <= number2; i++) {
+    for (let i = 1; i <= 30; i++) {
         resultado = Math.pow(number2, i)
     }
     return resultado
@@ -44,4 +44,23 @@ document.getElementById("bt2").addEventListener("click", () => {
     res2.innerHTML = potencia(parseFloat(n2.value))
 })
 
-//Atividade 3:
+//Atividade 3: não concluida
+
+const par = (number31) => {
+    if (number31 % 2 == !0) {
+        return 'Não é primo'
+    }
+    for (let i = 2; i <= 1000; i++) {
+        let soma
+        soma = number31 + i
+    }
+    return soma
+}
+
+document.getElementById("bt3").addEventListener("click", () => {
+    const n3 = document.getElementById("qt3")
+    const res3 = document.getElementById("res3")
+    res3.innerHTML = par(parseFloat(n3.value))
+})
+
+//Atividade 4:
