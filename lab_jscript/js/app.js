@@ -19,7 +19,7 @@ const fatorial = (number1) => {
         fatorial = fatorial * i;
     }
 
-    return (number1 + "! = " + number1 + "x" + (number1--) + "=" + fatorial);
+    return fatorial;
 }
 
 document.getElementById("bt1").addEventListener("click", () => {
@@ -28,39 +28,73 @@ document.getElementById("bt1").addEventListener("click", () => {
     res1.innerHTML = fatorial(parseFloat(n1.value))
 })
 
-//Atividade 2: Não concluida
+//Atividade 2:
 
-const potencia = (number2) => {
+const potencia = () => {
+
+    const res2 = document.getElementById("res2")
+
     let resultado
+
     for (let i = 1; i <= 30; i++) {
-        resultado = Math.pow(number2, i)
+        resultado = Math.pow(4, i)
+        res2.appendChild(document.createTextNode(`4 * ${i} é ${resultado} | `))
     }
     return resultado
 }
 
 document.getElementById("bt2").addEventListener("click", () => {
-    const n2 = document.getElementById("qt2")
-    const res2 = document.getElementById("res2")
-    res2.innerHTML = potencia(parseFloat(n2.value))
+    potencia()
 })
 
-//Atividade 3: não concluida
+//Atividade 3:
 
-const par = (number31) => {
-    if (number31 % 2 == !0) {
-        return 'Não é primo'
+function number31() {
+    const res3 = document.getElementById("res3")
+    let total = 0
+    for (let i = 0; i <= 1000; i++) {
+        if (i % 2 == 0) {
+            total += i
+        }
     }
-    for (let i = 2; i <= 1000; i++) {
-        let soma
-        soma = number31 + i
-    }
-    return soma
+    return res3.innerHTML = (`A soma dos números pares até 1000 é ${total}`)
 }
 
 document.getElementById("bt3").addEventListener("click", () => {
-    const n3 = document.getElementById("qt3")
-    const res3 = document.getElementById("res3")
-    res3.innerHTML = par(parseFloat(n3.value))
+        number31()
+    })
+    //Atividade 4:
+const fibonacci = () => {
+    const res4 = document.getElementById("res4")
+    let result
+    let fibonacci = [];
+    fibonacci[0] = 0;
+    fibonacci[1] = 1;
+    for (let i = 2; i < 100; i++) {
+        result = fibonacci[i] = fibonacci[i - 2] + fibonacci[i - 1];
+        res4.appendChild(document.createTextNode(`${result}\n`))
+    }
+    return result
+}
+document.getElementById("bt4").addEventListener("click", () => {
+    fibonacci()
 })
 
-//Atividade 4:
+//Atividade 5:
+
+const primo = () => {
+    const res5 = document.getElementById("res5")
+    for (let i = 2; i <= 1000; i++) {
+        if (i % i == 0) {
+            i++
+            return i
+        } else {
+            return 0
+        }
+        res5.appendChild(document.createTextNode(`${primo}\n`))
+    }
+}
+
+document.getElementById("bt5").addEventListener("click", () => {
+    primo()
+})
