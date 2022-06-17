@@ -11,6 +11,16 @@ const checknumber = num => {
 
 //Atividade 1:
 
+const fat = (num21) => {
+    if (num21 < 0) {
+        return "Seu arrombado. \n positivo pfv."
+    } else {
+        return num21 * (num21 - 1) * (num21 - 2)
+    }
+}
+
+
+
 const fatorial = (number1) => {
 
     let fatorial = 1;
@@ -47,6 +57,8 @@ document.getElementById("bt2").addEventListener("click", () => {
     potencia()
 })
 
+
+
 //Atividade 3:
 
 function number31() {
@@ -61,9 +73,14 @@ function number31() {
 }
 
 document.getElementById("bt3").addEventListener("click", () => {
-        number31()
-    })
-    //Atividade 4:
+    number31()
+})
+
+
+
+
+
+//Atividade 4:
 const fibonacci = () => {
     const res4 = document.getElementById("res4")
     let result
@@ -94,6 +111,10 @@ const primo = () => {
         res5.appendChild(document.createTextNode(`${primo}\n`))
     }
 }
+
+document.getElementById("bt5").addEventListener("click", () => {
+    primo()
+})
 
 document.getElementById("bt5").addEventListener("click", () => {
     primo()

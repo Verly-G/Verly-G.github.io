@@ -64,11 +64,12 @@ document.getElementById("bt3").addEventListener("click", () => {
     res3.innerHTML = primo(parseFloat(att31.value))
 })
 
+
 //Atividade 4:
 
 const hipotenusa = (num41, num42) => {
     let resultado = num41 * num41 + num42 * num42
-    return resultado * resultado
+    return Math.sqrt(resultado)
 }
 
 document.getElementById("bt4").addEventListener("click", () => {
@@ -107,7 +108,11 @@ document.getElementById("bt6").addEventListener("click", () => {
 //Atividade 7
 
 const nota = (num71, num72, num73) => {
-    return (num71 * 2 + num72 * 3 + num73 * 5) / 10
+    if (num71 < 0 || num72 < 0 || num73 < 0) {
+        return "O número tem que ser positivo."
+    } else {
+        return (num71 * 2 + num72 * 3 + num73 * 5) / 10
+    }
 }
 
 document.getElementById("bt7").addEventListener("click", () => {
