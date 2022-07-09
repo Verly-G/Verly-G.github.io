@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    background-color: #16181d;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+h3{
+    padding-left: 165px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: white;
+    font-size: 40px;
+}
+
+#principal{
+    margin: 0 auto;
+    width: 50%;
+    height: 550px;
+    background-color: #42464c;
+}
+#bt{
+    margin-left: 300px;
+    border-radius: 20px;
+    height: 30px;
+
+}
+
