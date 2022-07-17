@@ -36,31 +36,47 @@ function addArray(){
 }
 
 //Número 2
+function isPrime(number) {
+	for (let i = 2, s = Math.sqrt(number); i <= s; i++) if (number % i === 0) return false;
+	return number !== 1;
+}
+//Sem intervalo
+function primes(begin, end) {
+	let result = [];
+
+	if (end < begin) return result;
+	else {
+	  for (let i = 2; result.length < begin; i++) if (isPrime(i)) result.push(i);
+	}
+  
+	return result;
+}
+
+document.getElementById("btprime").addEventListener('click', () =>{
+	let respostaprime = document.getElementById("resposta1")
+	let numberprime = parseInt(document.getElementById("num1").value)
+	respostaprime.innerHTML = primes(numberprime)
+})
+
+//Com intervalo
 function primo(){
-	let prime = parseInt(document.getElementById("prime").value)
 	let inicio = parseInt(document.getElementById('inicio').value);
 	let fim = parseInt(document.getElementById('fim').value);
 	let resposta = document.getElementById('resposta');
 	let texto ='';
 	let div;
-	let divisor;
-	
-	for(let x = 1; x <=prime; x++){
-		if(prime % x == 0)
-			divisor++;
-	if(divisor==2)
-		resposta1.innerHTML = divisor;
-	}
 	for(let i=inicio ; i<=fim ; i++){
 		div=0;
 		for(let j=1 ; j<=i ; j++)
 			if(i % j == 0)
 				div++;
-  
+	
 		if(div==2)
 			texto += i + " - ";
 	}
-	resposta.innerHTML = texto;}
+	resposta.innerHTML = texto;
+}
+
 
 //Número 3:
 function romano()
@@ -80,7 +96,6 @@ function romano()
     i--;
     }
 }
-
 //Número 4:
 function caixaEletronico(){
 
@@ -94,7 +109,4 @@ function caixaEletronico(){
 	})
 	
 	document.getElementById("res5").value = `Notas entregues:  ${newArrCedulas[0]} nota(s) de R$100,00, ${newArrCedulas[1]} nota(s) de R$50,00 e ${newArrCedulas[2]} nota(s) de R$20,00, ${newArrCedulas[3]} nota(s) de R$10,00, ${newArrCedulas[4]} nota(s) de R$5,00, ${newArrCedulas[5]} nota(s) de R$2,00`
-  
 }
-
-
