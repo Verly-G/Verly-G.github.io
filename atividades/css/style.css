@@ -7,10 +7,30 @@ a{
     text-decoration: none;
     color: black;
 }
+h2{
+    padding-left: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    font-size: 40px;
+}
 
 #principal{
     margin: 0 auto;
     width: 50%;
     height: 550px;
     background-color: #42464c;
+}
+#bt{
+    margin-left: 200px;
+    border-radius: 20px;
+    height: 25px;
+
+}
+
+#bt2{
+    margin-left: 50px;
+    border-radius: 20px;
+    height: 25px;
+
 }
