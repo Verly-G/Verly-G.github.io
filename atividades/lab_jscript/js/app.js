@@ -56,9 +56,6 @@ const potencia = () => {
 document.getElementById("bt2").addEventListener("click", () => {
     potencia()
 })
-
-
-
 //Atividade 3:
 
 function number31() {
@@ -75,10 +72,6 @@ function number31() {
 document.getElementById("bt3").addEventListener("click", () => {
     number31()
 })
-
-
-
-
 
 //Atividade 4:
 const fibonacci = () => {
@@ -111,10 +104,6 @@ const primo = () => {
         res5.appendChild(document.createTextNode(`${primo}\n`))
     }
 }
-
-document.getElementById("bt5").addEventListener("click", () => {
-    primo()
-})
 
 document.getElementById("bt5").addEventListener("click", () => {
     primo()

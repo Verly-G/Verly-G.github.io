@@ -9,10 +9,10 @@
 <body style="text-align: center;">
 
 	<p>1: Crie as funções aplicáveis a arrays, de acordo com a Tabela 1.<br>
-		A função sumdeve receber um array numérico como parâmetro e retornar a somade seus elementos.<br> 
+		A função sumdeve receber um array numérico como parâmetro e retornar a somade seus elementos.<br>
 		A função sumOdds recebe um array numérico e retorna a soma apenas dos elementos ímpares.<br>
 		A função product recebe um array numérico e retorna o produto de seus elementos.</b></p>
-	
+
 	<br><br>
 	<input id="num" type="number">
 
@@ -26,24 +26,38 @@
 	<output id="res2"></output>
 	<output id="res3"></output>
 
+	<p>2: Na matemática um número é considerado primo se ele possuir apenas dois divisores, o número um e ele mesmo. Para ajudar a gerar uma série de n números primos,
+	<br>crie uma função que ao recebero tamanho n retorne a respectiva série de números primos, por exemplo, ao receber o valor 4 o retorno será 2, 3, 5, 7.
+	<br>Contudo, se for recebido dois valores a interpretação será que a série deverá compreender o intervalo desses valores,
+	<br>portanto, os valores 2, 10 resultaram em 2, 3, 5, 7.</p>
+
+	<h4>Sem intervalo</h4>
+	<input type="number" id="num1">
+	<button id="btprime">Enviar</button>
+	<output id="resposta1"></output>
+
+	<h4>Com intervalo</h4>
+	<input id="inicio" type="number"/>
+	<input id="fim" type="number"/>
+	<button onclick="primo()">Enviar</button>
+ 	<output id="resposta"></output>
+
 	<p>3: O sistema de numeração romana é uma forma de representação numérica composto por sete letras maiúsculas do alfabeto latino: <br/>
-		I, V, X, L, C, D e M.Então  crie  uma  função  para  receber  um  número  decimal  e  o  retorne  no  formato romano, 
+		I, V, X, L, C, D e M.Então  crie  uma  função  para  receber  um  número  decimal  e  o  retorne  no  formato romano,
 		<br/>por exemplo, ao receber 27 retorne XXVII. </p>
 
 	<input type="number" id="N">
 	<br><br>
-	<button id="bt2">Enviar!</button>
-
-	<output id="res4"></output>
+	<button id="bt2" onclick="romano()">Enviar</button>
 
 	<p>4: A ideia do saque mínimo consiste em determinar qual é a quantidade mínima de cédulas que devem ser coletadas para retirar um valor específico.<br/>
-		Considerando que um ATM possuia as cédulas de 100, 50, 20, 10, 5 e 2,</p>
-	
+	Considerando que um ATM possuia as cédulas de 100, 50, 20, 10, 5 e 2,</p>
+
 	<input type="number" id="nC">
 	<br><br>
-	<button id="bt3" onclick="minimo()">Enviar</button>
+	<button id="bt3" onclick="caixaEletronico()">Enviar</button>
+
 	<br>
-	<output id="res5"></output>
 
 </body>
 <script src="./js/array.js"></script>
