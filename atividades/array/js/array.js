@@ -44,6 +44,7 @@ function isPrime(number) {
 }
 //Sem intervalo
 <<<<<<< HEAD
+<<<<<<< HEAD
 function primes(numberprime) {
 	let result = [];
 	if (numberprime > 0) {
@@ -82,6 +83,11 @@ function primo(){
 function primes(begin, end) {
 	let result = [];
 
+=======
+function primes(begin, end) {
+	let result = [];
+
+>>>>>>> 3bd16ee28c5a2b6fb6fe3230597cd2911c9c18cb
 	if (end < begin) return result;
 	else {
 	  for (let i = 2; result.length < begin; i++) if (isPrime(i)) result.push(i);
@@ -115,6 +121,9 @@ function primo(){
 	resposta.innerHTML = texto;
 }
 
+<<<<<<< HEAD
+>>>>>>> 3bd16ee28c5a2b6fb6fe3230597cd2911c9c18cb
+=======
 >>>>>>> 3bd16ee28c5a2b6fb6fe3230597cd2911c9c18cb
 
 //Número 3:
@@ -141,7 +150,11 @@ function caixaEletronico(){
 	let totalAvailable = parseInt(document.getElementById("nC").value)
 	let cedulas = [100,50,20,10,5,2]
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 3bd16ee28c5a2b6fb6fe3230597cd2911c9c18cb
 =======
   
 >>>>>>> 3bd16ee28c5a2b6fb6fe3230597cd2911c9c18cb
@@ -151,9 +164,15 @@ function caixaEletronico(){
 		return cedulas
 	})
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	document.write(`Notas entregues:  ${newArrCedulas[0]} nota(s) de R$100,00, ${newArrCedulas[1]} nota(s) de R$50,00 e ${newArrCedulas[2]} nota(s) de R$20,00, ${newArrCedulas[3]} nota(s) de R$10,00, ${newArrCedulas[4]} nota(s) de R$5,00, ${newArrCedulas[5]} nota(s) de R$2,00`)
 }
+=======
+	
+	document.getElementById("res5").value = `Notas entregues:  ${newArrCedulas[0]} nota(s) de R$100,00, ${newArrCedulas[1]} nota(s) de R$50,00 e ${newArrCedulas[2]} nota(s) de R$20,00, ${newArrCedulas[3]} nota(s) de R$10,00, ${newArrCedulas[4]} nota(s) de R$5,00, ${newArrCedulas[5]} nota(s) de R$2,00`
+}
+>>>>>>> 3bd16ee28c5a2b6fb6fe3230597cd2911c9c18cb
 =======
 	
 	document.getElementById("res5").value = `Notas entregues:  ${newArrCedulas[0]} nota(s) de R$100,00, ${newArrCedulas[1]} nota(s) de R$50,00 e ${newArrCedulas[2]} nota(s) de R$20,00, ${newArrCedulas[3]} nota(s) de R$10,00, ${newArrCedulas[4]} nota(s) de R$5,00, ${newArrCedulas[5]} nota(s) de R$2,00`
