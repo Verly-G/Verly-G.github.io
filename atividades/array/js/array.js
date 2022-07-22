@@ -1,4 +1,4 @@
-let array = [];
+let array = [0];
 
 function mostraarray(){
 	let marray = document.getElementById("array")
@@ -21,7 +21,7 @@ function addArray(){
 
 
 	let valorimpar = array.reduce(function(acumulador, valorAtual){
-		if(valorAtual % 2 != 0){
+		while (valorAtual % 2 != 0){
 			return acumulador + valorAtual;
 		}
 		return acumulador;
