@@ -1,4 +1,4 @@
-let array = [0];
+let array = [];
 
 function mostraarray(){
 	let marray = document.getElementById("array")
@@ -20,8 +20,8 @@ function addArray(){
 	// document.write("O valor da soma dos números é: " + valor)
 
 
-	let valorimpar = array.reduce(function(acumulador, valorAtual){
-		while (valorAtual % 2 != 0){
+	let valorimpar = array.reduce((acumulador, valorAtual) =>{
+		if(valorAtual % 2 != 0){
 			return acumulador + valorAtual;
 		}
 		return acumulador;
