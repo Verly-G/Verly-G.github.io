@@ -81,19 +81,21 @@ function primo(){
 //Número 3:
 function romano()
 {
-	let number = parseInt(document.getElementById("N").value)
+		let number = parseInt(document.getElementById("N").value)
     let num = [1,4,5,9,10,40,50,90,100,400,500,900,1000];
     let letra = ["I","IV","V","IX","X","XL","L","XC","C","CD","D","CM","M"];
     let i= 12;
+		let result = [];
     while(number>0)
     {
-    let div = Math.floor(number/num[i]);
-    number = number%num[i];
-    while(div--)
-    {
-        document.write(letra[i]);
-    }
-    i--;
+	    let div = parseInt(number/num[i]);
+	    number = number%num[i];
+	    while(div--)
+	    {
+				result.push(letra[i])
+	    }
+	    i--;
+			document.getElementById("resposta_romano").value = result.join('')
     }
 }
 //Número 4:
@@ -108,5 +110,5 @@ function caixaEletronico(){
 		return cedulas
 	})
 
-	document.write(`Notas entregues:  ${newArrCedulas[0]} nota(s) de R$100,00, ${newArrCedulas[1]} nota(s) de R$50,00 e ${newArrCedulas[2]} nota(s) de R$20,00, ${newArrCedulas[3]} nota(s) de R$10,00, ${newArrCedulas[4]} nota(s) de R$5,00, ${newArrCedulas[5]} nota(s) de R$2,00`)
+	document.getElementById("resposta_saque_minimo").value = `Notas entregues:  ${newArrCedulas[0]} nota(s) de R$100,00, ${newArrCedulas[1]} nota(s) de R$50,00 e ${newArrCedulas[2]} nota(s) de R$20,00, ${newArrCedulas[3]} nota(s) de R$10,00, ${newArrCedulas[4]} nota(s) de R$5,00, ${newArrCedulas[5]} nota(s) de R$2,00`
 }
