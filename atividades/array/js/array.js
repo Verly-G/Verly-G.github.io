@@ -90,7 +90,7 @@ function romano()
     {
 	    let div = parseInt(number/num[i]);
 	    number = number%num[i];
-	    while(div--)
+	    if(div)
 	    {
 				result.push(letra[i])
 	    }
