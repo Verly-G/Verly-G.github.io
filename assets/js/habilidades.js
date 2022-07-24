@@ -10,14 +10,14 @@ const sobreSkill = [
                     '<p>Github</p> <br> <p>É uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. </p> <br>'
 ]
 const dataInicio = [
-                    (new Date(2021, 10, 1)).getTime(), // 0
-                    (new Date(2021, 10, 1)).getTime(), // 1
+                    (new Date(2021, 1, 1)).getTime(), // 0
+                    (new Date(2021, 1, 1)).getTime(), // 1
                     (new Date(2022, 0, 1)).getTime(), // 2
                     (new Date(2022, 3, 1)).getTime(), // 3
                     (new Date(2022, 3, 1)).getTime(), // 4
                     (new Date(2022, 1, 1)).getTime(), // 5
-                    (new Date(2021, 11, 1)).getTime(), // 6
-                    (new Date(2021, 11, 1)).getTime(), // 7
+                    (new Date(2021, 1, 1)).getTime(), // 6
+                    (new Date(2021, 1, 1)).getTime(), // 7
                     ]
 const dataHoje = (new Date()).getTime();
 

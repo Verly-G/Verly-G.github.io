@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quando&display=swap');
 * {
+    scroll-behavior: smooth;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Quando', serif;
-    scroll-behavior: smooth;
 }
 
 .footer {
     width: 100%;
-    background-color:#3F4E4F;
+    background-color:#241a1b;
 }
 
 .footer-conteiner {
