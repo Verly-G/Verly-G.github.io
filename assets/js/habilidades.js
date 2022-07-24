@@ -6,6 +6,7 @@ const sobreSkill = [
                     '<p>JavaScript</p> <br> <p>É uma linguagem de programação. Juntamente com HTML e CSS, é uma das três principais tecnologias da web.</p> <br>',
                     '<p>PHP</p> <br> <p>O PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web.</p> <br>',
                     '<p>Git</p> <br> <p>É um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software.</p> <br>',
+                    '<p>C++</p> <br> <p>C++ é uma linguagem de programação compilada multi-paradigma e de uso geral. Sendo bastante usada também na academia por seu grande desempenho e base de utilizadores.</p><br>',
                     '<p>Github</p> <br> <p>É uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. </p> <br>'
 ]
 const dataInicio = [
