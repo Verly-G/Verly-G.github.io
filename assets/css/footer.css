@@ -10,7 +10,7 @@
 
 .footer {
     width: 100%;
-    background-color:#241a1b;
+    background-color:#145da0;
 }
 
 .footer-conteiner {
@@ -66,10 +66,12 @@
 
 .links2 {
     background-image: url(../img/insta2.png);
+    border-radius: 5px;
 }
 
 .transparente {
     transition: ease-in-out 0.3s;
+    border-radius: 5px;
 }
 
 .transparente:hover {
