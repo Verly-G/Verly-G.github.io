@@ -30,12 +30,13 @@ document.getElementById("bt_substituir").addEventListener("click", () =>{
     document.getElementById("result_substituir").innerHTML = text;
 })
 
-document.getElementById("bt_pesquisar").addEventListener("click", () =>{
-    let pesquisar = document.getElementById("pesquisar").value
-    let texto = document.getElementById("frase").value
+// document.getElementById("bt_pesquisar").addEventListener("click", () =>{
+//     let pesquisar = document.getElementById("pesquisar").value
+//     let texto = document.getElementById("frase").value
+//     let result_pesquisar = document.getElementById("result_pesquisar")
 
-    let text = texto.replace(<mark>pesquisar</mark>)
+//     texto = texto.replace(pesquisar.style.backgroundColor = "red")
 
-    document.getElementById("result_pesquisar").innerHTML = text;
-})
+//     result_pesquisar.innerHTML = pesquisar;
+// })
 
