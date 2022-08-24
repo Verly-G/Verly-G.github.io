@@ -15,7 +15,7 @@ function addArray(){
 	mostraarray()
 	let valor = array.reduce(function(acumulador, valorAtual){
 		return acumulador + valorAtual
-	})
+	},0)
 	document.getElementById("res1").value = "Soma dos números: " + valor;
 	// document.write("O valor da soma dos números é: " + valor)
 
@@ -25,14 +25,14 @@ function addArray(){
 			return acumulador + valorAtual;
 		}
 		return acumulador;
-	})
+	},0)
 	document.getElementById("res2").value = "Soma dos números ímpares: " + valorimpar;
 	// document.write("A sola dos números ímpares são: " + valorimpar)
 
 
 	let multi = array.reduce(function(acumulador, valorAtual){
 		return acumulador * valorAtual
-	})
+	},0)
 	document.getElementById("res3").value = "Produto: " + multi;
 	// document.write("A multiplicação dos números é: " + multi)
 }
