@@ -1,19 +1,8 @@
-const checknumber = num => {
-
-    num = parseFloat(num)
-    return
-    if (!num || NaN) {
-        return 0;
-    } else {
-        return num;
-    }
-}
-
 //Atividade 1:
 
 const fat = (num21) => {
     if (num21 < 0) {
-        return "Seu arrombado. \n positivo pfv."
+        return "Mande um número positivo."
     } else {
         return num21 * (num21 - 1) * (num21 - 2)
     }
@@ -62,7 +51,7 @@ function number31() {
     const res3 = document.getElementById("res3")
     let total = 0
     for (let i = 0; i <= 1000; i++) {
-        if (i % 2 == 0) {
+        if (i % 2 === 0) {
             total += i
         }
     }
