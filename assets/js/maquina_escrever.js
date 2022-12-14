@@ -37,4 +37,3 @@ function typeWriter (nome) {
 
 /* typeWriter(fName); */
 maisHabilidades(botaoVerMais);
-

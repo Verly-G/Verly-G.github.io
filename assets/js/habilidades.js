@@ -22,15 +22,13 @@ const dataInicio = [
 const dataHoje = (new Date()).getTime();
 
 skills.forEach(  (elemento, index) => {
-    let index1 = index;
-    let elemento1 = elemento;
-    elemento.addEventListener('mouseover', (evento) => {
+    elemento.addEventListener('mouseover', () => {
         let tempo = 'mês';
-        let tempoDeExperiencia = Math.round((dataHoje-dataInicio[index1])/(1000*60*60*24*30));
+        let tempoDeExperiencia = Math.round((dataHoje-dataInicio[index])/(1000*60*60*24*30));
         if (tempoDeExperiencia > 1) tempo = 'meses'
-        descricao.innerHTML = `<p>${sobreSkill[index1]} </p>` ;
+        descricao.innerHTML = `<p>${sobreSkill[index]} </p>` ;
     } )
-    elemento.addEventListener('mouseout', (evento, elemento,) => {
+    elemento.addEventListener('mouseout', () => {
         descricao.innerHTML = 'Passe o mouse por cima de alguma habilidade para ler a descrição';
     } )
 } );
