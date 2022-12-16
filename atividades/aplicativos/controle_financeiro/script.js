@@ -17,7 +17,6 @@ const removeTransaction = ID =>{
     updateLocalStorage()
     init()
 }
-
 const addTransactionIntoDOM = ({ amount, name, id }) => {
     const operator = amount < 0 ? '-' : '+'
     const CSSClass = amount < 0 ? 'minus' : 'plus'
