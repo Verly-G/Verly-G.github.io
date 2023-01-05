@@ -13,8 +13,9 @@
 <body>
     <header>
         <div class="logo">
-            <h1>FoodBar</h1>
+            <h1>Verly's Restaurant</h1>
             <!-- Imagem do prato principal: Pegar com JSONs -->
+            <img src="" alt="" id="poster">
         </div>
         <nav>
             <i class="bi menu bi-list"></i>
@@ -26,10 +27,11 @@
                     <li><a href="#">Hotline</a></li>
                 </ul>
                 <div class="user_cart">
-                    <i class="bi cart bi-cart-dash-fill"></i>
+                    <button id="carrinho"><i class="bi cart bi-cart-dash-fill"></i></button>
                 </div>
             </div>
         </nav>
+
         <div class="left_menu">
             <a href="#">process</a>
             <a href="#">design</a>
@@ -39,37 +41,27 @@
             <div class="content">
                 <!-- COLOCAR AQUI APENAS UM PRATO COM A REQUISIÇÃO FEITA. -->
                 <!-- EXEMPLO: OBS, USE AS MESMAS CLASSES ABAIXO -->
-                <h1 id="title">Thai Chicken</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus esse facilis quisquam illum iure recusandae excepturi velit inventore aspernatur eligendi!</p>
+                <h2 id="title"></h2>
+                <p id="details"></p>
                 <div class="price_order">
                     <div class="price">
-                        <h2 id="price_cont">$30</h2>
+                        <h2 id="price_cont"></h2>
                         <p>total payable</p>
                     </div>
-                    <a href="#">Order now</a>
                 </div>
             </div>
-            <!-- <div class="cards ">
-                COLOCAR AQUI O PRATO COM A REQUISIÇÃO FEITA.
-                EXEMPLO: OBS, USE AS MESMAS CLASSES ABAIXO
-                <div class="card">
-                    <img src="" class="dis">
-                </div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-
+            <div class="cards">
+                <!-- COLOCAR AQUI O PRATO COM A REQUISIÇÃO FEITA.
+                EXEMPLO: OBS, USE AS MESMAS CLASSES ABAIXO -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div> -->
+            </div> 
         </section>
     </header>
-
+    <div class="request">
+        <div id="total"></div>
+    </div> 
 </body>
-<!-- <script src="./script.js"></script> -->
+<script src="./script.js"></script>
 <script src="./estilo/app.js"></script>
-
 </html>
