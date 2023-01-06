@@ -319,9 +319,10 @@ header section .cards .card p {
 }
 
 .request{
+    position: relative;
     color:#000;
     height: 75%;
-    width: 320px;
+    width: 350px;
     background: lightgray;
     display: none;   
     overflow-y: auto;
@@ -330,20 +331,19 @@ header section .cards .card p {
 
 .request div{
     display: flex;
-    margin-left: 20px;
+    margin-left: 55px;
+    margin-top: 40px;
+    max-height: 13px;
 }
 
 .request div h3{
     font-size: 12px;
     margin-left: 20px;
-    top: 50px;
 }
 
 .request div h4{
     font-size: 12px;
     color: red;
-    top: 50px;
-    left: 10px;
 }
 .request div button{
     top: 50px;
@@ -362,7 +362,6 @@ header section .cards .card p {
     position: absolute;
     font-size: 20px;
     margin-left: 55px;
-    top: 520px;
 }
 
 .request h5 span{

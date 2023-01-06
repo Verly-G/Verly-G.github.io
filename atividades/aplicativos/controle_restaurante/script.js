@@ -60,13 +60,15 @@ const Objeto = (cardapio) => {
 const getTotal = () => {
     divRequest.innerHTML = ''
     let valorTotal = document.createElement('h5')
-    let prato = localStorage.getItem('RestauranteVerly')
-    let pratoOBJ = JSON.parse(prato)
+    let pratos = localStorage.getItem('RestauranteVerly')
+    let pratoOBJ = JSON.parse(pratos)
     let total = pratoOBJ.reduce((acc, pratoAtual) => acc + Number(getPrice(pratoAtual.code)), 0)
+
+    total = total * 1.10
 
     valorTotal.innerHTML = `Valor Total: <span>${total.toFixed(2)}</span>`
 
-    divRequest.append(valorTotal)
+    divRequest.prepend(valorTotal)
 }
 
 const createElement = (code, photo, price, name, details) => {
@@ -152,21 +154,16 @@ const divPoster = () => {
     })
 }
 
-const classclassification = code => {
-
-}
-
-
 const createItem = code => {
     pedidos.push({
-        Id: generateID(),
+        id: generateID(),
         code: code,
         date: new Date()
     })
     return pedidos
 }
 
-const generateID = () => Math.round(Math.random() * 1000)
+const generateID = () => Math.ceil(Math.random() * 1000)
 
 const saveItem = code => {
     localStorage.setItem(`RestauranteVerly`, JSON.stringify(createItem(code)))
