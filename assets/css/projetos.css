@@ -6,7 +6,8 @@
     padding-top: 93px;
 }
 
-.projetos h2, .projetos a {
+.projetos h2,
+.projetos a {
     text-align: center;
 }
 
@@ -89,23 +90,25 @@ button:hover {
     width: 100%;
     justify-content: center;
 }
+
 @media (max-width:1200px) {
-  .projetos{
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-  }
+    .projetos {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
 
-  #projetos {
-      display: flex;
-      justify-content: center;
-  }
+    #projetos {
+        display: flex;
+        justify-content: center;
+    }
 
-  .projetos-itens {
-      flex-direction: column;
-  }
+    .projetos-itens {
+        flex-direction: column;
+    }
 
 }
+
 @media (max-width:950px) {
     .pro {
         max-width: 300px;

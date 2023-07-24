@@ -5,14 +5,14 @@ h2 {
 }
 
 #habilidades {
-    background-color:   #5885AF;
+    background-color: #5885AF;
 }
 
 .habilidades-pd {
     padding-top: 93px;
 }
 
-.habilidades-pd h2 { 
+.habilidades-pd h2 {
     text-align: center;
     padding-bottom: 70px;
 }
@@ -21,7 +21,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    gap:50px;
+    gap: 50px;
     padding-bottom: 70px;
 }
 
@@ -74,7 +74,7 @@ h2 {
         display: flex;
         flex-direction: column-reverse;
         margin: 0 auto;
-        gap:50px;
+        gap: 50px;
         padding-bottom: 70px;
         align-items: center;
     }
@@ -84,6 +84,7 @@ h2 {
     }
 
 }
+
 @media (max-width:950px) {
     .conteiner-skills {
         display: flex;
@@ -107,7 +108,7 @@ h2 {
     opacity: 0;
 }
 
-.skill1{
+.skill1 {
     background-image: url(../img/html2.svg);
 }
 
@@ -118,19 +119,23 @@ h2 {
 .skill3 {
     background-image: url(../img/js2.svg);
 }
+
 .skill5 {
     background-image: url(../img/php2.svg);
 }
-.skill6{
+
+.skill6 {
     background-image: url(../img/cpp_icon2.png);
 }
+
 .skill9 {
     background-image: url(../img/git2.svg);
 }
+
 .skill10 {
     background-image: url(../img/github2.svg);
 }
+
 #fundo {
     fill: red;
 }
-
