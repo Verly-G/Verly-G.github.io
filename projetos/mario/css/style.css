@@ -53,6 +53,16 @@
 .btnReiniciar:hover{
     cursor: pointer;
 }
+.cronometro{
+    position: absolute;
+    right: 20px;
+    display: flex;
+    color: red;
+    font-size: 16pt;
+}
+.cronometro p{
+    margin-top: 20px;
+}
 
 @keyframes pipe-animation{
     from{
