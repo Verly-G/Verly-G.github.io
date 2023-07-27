@@ -97,6 +97,9 @@ h2 {
     .conteiner-descricao {
         max-width: 300px;
     }
+    h2{
+        font-size: 30px;
+    }
 
 }
 

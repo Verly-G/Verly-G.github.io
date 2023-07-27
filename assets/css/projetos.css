@@ -88,6 +88,7 @@ button:hover {
     flex-wrap: wrap;
     gap: 29.5px;
     width: 100%;
+    margin: 0 auto;
     justify-content: center;
 }
 
