@@ -3,7 +3,7 @@ const pipe = document.querySelector('.pipe')
 const clouds = document.querySelector('.clouds')
 const button = document.querySelector('.btnReiniciar')
 let segundos = document.querySelector('#segundos')
-let minutos = document.querySelector('#wminutos')
+let minutos = document.querySelector('#minutos')
 let perdeuJogo = false
 let milisegundos = 0
 let segundo = 0
@@ -37,12 +37,13 @@ const loop = setInterval(() =>{
             segundos.innerHTML = `0${segundo}` 
         }
     }
-    if(segundos == 60){
+    if(segundo == 60){
         segundo = 0
+        segundos.innerHTML = `00` 
         minuto += 1
         minutos.innerHTML = minuto
         if(minuto < 10){
-            minutos.innerHTML = `0${minuto}` 
+            minutos.innerHTML = `0${minuto}:` 
         }
     }
 

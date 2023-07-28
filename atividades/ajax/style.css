@@ -79,3 +79,11 @@ p {
     border-radius: 5px;
     text-align: center;
 }
+.inicio{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+  }
